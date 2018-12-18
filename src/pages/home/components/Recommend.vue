@@ -4,7 +4,7 @@
     <ul>
       <li
         class="item border-bottom"
-        v-for="item of recommendList"
+        v-for="item of list"
         :key="item.id"
       >
         <img class="item-img" :src="item.imgUrl" />
@@ -21,40 +21,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1712/71/71ace1aa7d971212a3.water.jpg_200x200_9638020d.jpg',
-        title: '渔阳滑雪场',
-        desc: '为广大滑雪爱好者打造了一个冬季乐园'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1712/71/71ace1aa7d971212a3.water.jpg_200x200_9638020d.jpg',
-        title: '渔阳滑雪场',
-        desc: '为广大滑雪爱好者打造了一个冬季乐园'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1712/71/71ace1aa7d971212a3.water.jpg_200x200_9638020d.jpg',
-        title: '渔阳滑雪场',
-        desc: '为广大滑雪爱好者打造了一个冬季乐园'
-      }, {
-        id: '0004',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1712/71/71ace1aa7d971212a3.water.jpg_200x200_9638020d.jpg',
-        title: '渔阳滑雪场',
-        desc: '为广大滑雪爱好者打造了一个冬季乐园'
-      }, {
-        id: '0005',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1712/71/71ace1aa7d971212a3.water.jpg_200x200_9638020d.jpg',
-        title: '渔阳滑雪场',
-        desc: '为广大滑雪爱好者打造了一个冬季乐园'
-      }, {
-        id: '0006',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1712/71/71ace1aa7d971212a3.water.jpg_200x200_9638020d.jpg',
-        title: '渔阳滑雪场',
-        desc: '为广大滑雪爱好者打造了一个冬季乐园'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
