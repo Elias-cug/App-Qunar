@@ -42,6 +42,7 @@ export default {
       axios.get('/api/index.json?city=' + this.city)
         .then(this.getHomeInfoSucc)
     },
+    // 数据返回成功
     getHomeInfoSucc (res) {
       res = res.data
       if (res.ret && res.data) {
