@@ -39,7 +39,7 @@ export default {
   },
   methods: {
     getHomeInfo () {
-      axios.get('/api/index.json?city=' + this.city)
+      axios.get('/api_qunar/index.json?city=' + this.city)
         .then(this.getHomeInfoSucc)
     },
     // 数据返回成功
